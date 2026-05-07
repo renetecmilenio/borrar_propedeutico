@@ -4,3 +4,5 @@ git add .
 git reset
 git restore [archivo]
 git commit -m "[Tu mensaje personalizado]"
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
