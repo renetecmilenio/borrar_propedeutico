@@ -6,3 +6,6 @@ git restore [archivo]
 git commit -m "[Tu mensaje personalizado]"
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+git branch
+git checkout [nombre de la rama]
+git switch [nombre de la rama]
