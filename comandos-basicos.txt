@@ -6,3 +6,5 @@ git restore [archivo]
 git commit -m "[Tu mensaje personalizado]"
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+git add remote origin [https://github.com/renetecmilenio/borrar_propedeutico.git]
+git push -u [nombre] [rama]
