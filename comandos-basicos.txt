@@ -9,3 +9,4 @@ git config --global user.email johndoe@example.com
 git branch
 git checkout [nombre de la rama]
 git switch [nombre de la rama]
+git log --online
