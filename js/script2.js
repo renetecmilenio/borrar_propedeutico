@@ -1,0 +1,1 @@
+console.log("\nHola soy mensaje js desde carpeta externa definido en el cierre l cuero del html(si es una buen opcion)\n")
