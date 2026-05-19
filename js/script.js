@@ -1,3 +1,29 @@
+// let edad = prompt("¿Cuántos años tienes?");
+// let nombre = "René Alejandro";
+// let esDesarrollador = true;
+
+
+// if (edad >= 18) {
+//   console.log("Tienes edad para tomar una cerveza");
+// } else {
+//   console.log("No tienes edad para tomar una cerveza");
+// }
+
+// ----------- autoinvocada -----------
+
+
+// (function () {
+//   console.log("Hola, soy una función autoinvocada");
+// })();
+
+// ((function () {
+//   console.log("Hola, soy una función autoinvocada");
+// })());
+
+// +function () {
+//   console.log("Hola, soy una función autoinvocada");
+// }();
+
 // -------------- EXPRESADA --------------
 // saludar("René Alejandro");
 
@@ -42,44 +68,31 @@
 // console.log(multiplicar(45, "100"))
 // console.log(dividir(0, 0))
 
-const nombre = nombre => console.log("Hola soy ", nombre)
+// const nombre = nombre => console.log("Hola soy ", nombre)
 
-nombre("Rene")
+// nombre("Rene")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-const persona = {
-  Nombre: "René",
-  Edad: "36",
-  Genero: "Masculino",
-  Altura: 1.75,
-  Peso: 70,
-  Profesion: "Desarrollador Web",
-  tecnologias: ["Javascript", "Python", "html", "css", "react", "node.js"],
-  contacto: {
-    email: "rene@gmail.com",
-    telefono: "1234567890",
-    direccion: "Calle Falsa 123",
-    redes: ["facebook", "twitter", "instagram"]
-  },
-  saludar: function () {
-    console.log("Hola, mi nombre es " + this.Nombre + " y tengo " + this.Edad + " años.");
-  },
-  brincar: function () {
-    console.log(this.Nombre + " está brincando.");
-  }
-}
+// const persona = {
+//   Nombre: "René",
+//   Edad: "36",
+//   Genero: "Masculino",
+//   Altura: 1.75,
+//   Peso: 70,
+//   Profesion: "Desarrollador Web",
+//   tecnologias: ["Javascript", "Python", "html", "css", "react", "node.js"],
+//   contacto: {
+//     email: "rene@gmail.com",
+//     telefono: "1234567890",
+//     direccion: "Calle Falsa 123",
+//     redes: ["facebook", "twitter", "instagram"]
+//   },
+//   saludar: function () {
+//     console.log("Hola, mi nombre es " + this.Nombre + " y tengo " + this.Edad + " años.");
+//   },
+//   brincar: function () {
+//     console.log(this.Nombre + " está brincando.");
+//   }
+// }
 
 // let brincar = persona.brincar();
 // console.log(brincar);
