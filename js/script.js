@@ -14,7 +14,7 @@
 
 
 
-let edad = prompt("¿Cuántos años tienes?");
+// let edad = prompt("¿Cuántos años tienes?");
 // let nombre = "René Alejandro";
 // let esDesarrollador = true;
 
@@ -28,11 +28,40 @@ let edad = prompt("¿Cuántos años tienes?");
 
 // -------------- OPERADOR TERNARIO [CONDICIÓN] ? [PARTE VERDADERA] : [PARTE FALSE]
 
-let isOld = edad >= 18
-  ? "Tienes edad para tomar una cerveza"
-  : "No tienes edad para tomar una cerveza";
+// let isOld = edad >= 18
+//   ? "Tienes edad para tomar una cerveza"
+//   : "No tienes edad para tomar una cerveza";
 
-console.log(isOld);
+// console.log(isOld);
+
+let dia = Number(prompt("¿Que día es?"))
+
+switch (dia) {
+  case 0:
+    console.log("Domingo")
+    break;
+  case 1:
+    console.log("Lunes")
+    break;
+  case 2:
+    console.log("Martes")
+    break;
+  case 3:
+    console.log("Miércoles")
+    break;
+  case 4:
+    console.log("Jueves")
+    break;
+  case 5:
+    console.log("Viérnes")
+    break;
+  case 6:
+    console.log("Sábado")
+    break;
+  default:
+    console.log("El día no existe")
+    break;
+}
 
 // ----------- autoinvocada -----------
 
