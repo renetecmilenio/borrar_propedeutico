@@ -1,4 +1,20 @@
-// let edad = prompt("¿Cuántos años tienes?");
+// let hora = prompt("¿Qué hora es? (0-23)");
+
+// if (hora >= 0 && hora <= 5) {
+//   console.log("Es de madrugada deja dormir a la gente");
+// } else if (hora >= 6 && hora <= 11) {
+//   console.log("Buenos días, que tengas un buen día");
+// } else if (hora >= 12 && hora <= 18) {
+//   console.log("Buenas tardes, que tengas un buen día");
+// } else if (hora >= 19 && hora <= 20) {
+//   console.log("Buenas tardes, es hora de merednar");
+// } else {
+//   console.log("ya es muy tarde, es hora de dormir");
+// }
+
+
+
+let edad = prompt("¿Cuántos años tienes?");
 // let nombre = "René Alejandro";
 // let esDesarrollador = true;
 
@@ -8,6 +24,12 @@
 // } else {
 //   console.log("No tienes edad para tomar una cerveza");
 // }
+
+let isOld = edad >= 18
+  ? "Tienes edad para tomar una cerveza"
+  : "No tienes edad para tomar una cerveza";
+
+console.log(isOld);
 
 // ----------- autoinvocada -----------
 
