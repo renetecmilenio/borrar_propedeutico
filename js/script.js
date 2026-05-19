@@ -25,6 +25,9 @@ let edad = prompt("¿Cuántos años tienes?");
 //   console.log("No tienes edad para tomar una cerveza");
 // }
 
+
+// -------------- OPERADOR TERNARIO [CONDICIÓN] ? [PARTE VERDADERA] : [PARTE FALSE]
+
 let isOld = edad >= 18
   ? "Tienes edad para tomar una cerveza"
   : "No tienes edad para tomar una cerveza";
