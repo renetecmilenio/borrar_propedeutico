@@ -66,9 +66,10 @@ switch (dia) {
 // ----------- autoinvocada -----------
 
 
-// (function () {
-//   console.log("Hola, soy una función autoinvocada");
-// })();
+(function () {
+  console.log("Hola, soy una función autoinvocada");
+
+})();
 
 // ((function () {
 //   console.log("Hola, soy una función autoinvocada");
@@ -79,12 +80,12 @@ switch (dia) {
 // }();
 
 // -------------- EXPRESADA --------------
-// saludar("René Alejandro");
 
-// function saludar (nombre) {
-//   console.log("Hola, mi nombre es " + nombre);
-// }
+function saludar (nombre) {
+  console.log("Hola, mi nombre es " + nombre);
+}
 
+saludar("René Alejandro");
 // -------------- EXPRESADA--------------
 
 // saludar("María Fernanda");
