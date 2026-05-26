@@ -36,57 +36,73 @@ Javascript usa un modelo asíncrono y no bloqueante, con un loop de eventos impl
 
 // CALLBACKS
 
-// function cuadradoCallback (value, cb) {
-//   setTimeout(() => {
-//     cb(value, value * value);
-//   }, 100);
-// }
+function cuadradoCallback (value, cb) {
+  setTimeout(() => {
+    cb(value, value * value);
+  }, 100);
+}
 
 
-// cuadradoCallback(0, (value, result) => {
-//   console.log("Inicia Callback");
-//   console.log(`Callback: ${value}, ${result}`);
+cuadradoCallback(0, (value, result) => {
+  console.log("Inicia Callback");
+  console.log(`Callback: ${value}, ${result}`);
 
-//   if (typeof value != "number") {
-//     console.log("El valor debe ser un número")
-//   }
+  if (typeof value != "number") {
+    console.log("El valor debe ser un número")
+  }
 
-//   if (value < 0) {
-//     console.log("El valor debe ser positivo")
-//   }
+  if (value < 0) {
+    console.log("El valor debe ser positivo")
+  }
 
-//   cuadradoCallback(1, (value, result) => {
-//     console.log(`Callback: ${value}, ${result}`);
+  cuadradoCallback(1, (value, result) => {
+    if (typeof value != "number") {
+      console.log("El valor debe ser un número")
+    }
 
-//     cuadradoCallback(2, (value, result) => {
-//       console.log(`Callback: ${value}, ${result}`);
+    if (value < 0) {
+      console.log("El valor debe ser positivo")
+    }
 
-//       cuadradoCallback(3, (value, result) => {
-//         console.log(`Callback: ${value}, ${result}`);
+    console.log(`Callback: ${value}, ${result}`);
 
-//         cuadradoCallback("cuatro", (value, result) => {
-//           if (typeof value != "number") {
-//             console.log("El valor debe ser un número")
-//           }
+    cuadradoCallback(2, (value, result) => {
 
-//           console.log(`Callback: ${value}, ${result}`);
+      if (typeof value != "number") {
+        console.log("El valor debe ser un número")
+      }
 
-//           cuadradoCallback(5, (value, result) => {
-//             console.log(`Callback: ${value}, ${result}`);
-//             console.log("Fin del callback hell")
-//           })
+      if (value < 0) {
+        console.log("El valor debe ser positivo")
+      }
+      console.log(`Callback: ${value}, ${result}`);
 
-//         })
+      cuadradoCallback(3, (value, result) => {
+        console.log(`Callback: ${value}, ${result}`);
 
-//       })
+        cuadradoCallback("cuatro", (value, result) => {
+          if (typeof value != "number") {
+            console.log("El valor debe ser un número")
+          }
 
-//     })
+          console.log(`Callback: ${value}, ${result}`);
 
-//   })
+          cuadradoCallback(5, (value, result) => {
+            console.log(`Callback: ${value}, ${result}`);
+            console.log("Fin del callback hell")
+          })
+
+        })
+
+      })
+
+    })
+
+  })
 
 
 
-// });
+});
 
 
 
@@ -150,17 +166,7 @@ Javascript usa un modelo asíncrono y no bloqueante, con un loop de eventos impl
 function cuadradoPromise (num) {
 
   if (typeof num != "number") {
-    return Promise.reject("debe ser un número")
-  }
-
-  // if (!num) {
-  //   return Promise.reject("Debe ingresar un valor")
-  // }
-
-  if (num < 0) {
-    return Promise.reject(`Error, el valor de ${num} ingresado debe ser un numero positivo`)
-
-    // console.log(`El valor ${value} es negativo, el resultado puede no ser el esperado`)
+    return Promise.reject(`Error, el valor de ${num} ingresado debe ser un numero`)
   }
 
   return new Promise((resuelve, rechaza) => {
@@ -175,7 +181,7 @@ function cuadradoPromise (num) {
 
 }
 
-
+let cadenatexto = "Hola soy una función asíncrona"
 
 async function funcionAsync () {
   try {
@@ -183,7 +189,7 @@ async function funcionAsync () {
     console.log("Inicio de async await")
 
     let obj = await cuadradoPromise(9)
-    console.log(`Async function: ${obj.num}, ${obj.resultado}`)
+    console.log(`Async function: ${2 + 3} -------`)
 
     obj = await cuadradoPromise(1)
     console.log(`Async function: ${obj.num}, ${obj.resultado}`)

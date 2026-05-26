@@ -13,20 +13,76 @@
 
   <script src="./js/script.js"></script> -->
 
+  <style>
+    .uno {
+      background-color: yellow;
+      border: solid #000;
+      padding: 50px;
+    }
+
+    .dos {
+      background-color: rgb(210, 210, 12);
+      border: solid #000;
+      padding: 50px;
+    }
+
+    .tres {
+      background-color: rgb(138, 138, 13);
+      border: solid #000;
+      padding: 50px;
+    }
+  </style>
 </head>
 
 <body>
+  <h1 id="Mititulo">Título </h1>
+
+
+
+  <button>Mi botón</button>
+
+
+  <div class="uno">
+
+    <div class="dos">
+      <div class="tres">
+
+      </div>
+    </div>
+  </div>
 
 
 
 
 
-  <!-- <script>
-    console.log("\nHola soy mensaje js inyectado directo en el html pero antes de la etiqueta de cierre body (ya es mejor opción pero no la mejor práctica)\n")
-  </script> -->
+  <!-- <script src="./js/events.js"></script> -->
 
-  <!-- <script src="./js/script.js"></script> -->
-  <script src="./js/asincrono.js"></script>
+
+  <script>
+
+
+
+    let uno = document.querySelector(".uno")
+    let dos = document.querySelector(".dos")
+    let tres = document.querySelector(".tres")
+
+    uno.addEventListener("click", () => {
+      console.log("clic en el uno")
+    })
+
+    dos.addEventListener("click", () => {
+      console.log("clic en el dos")
+    })
+    tres.addEventListener("click", () => {
+      console.log("clic en el tres")
+    })
+
+
+
+
+
+    // console.log(mititulo)
+  </script>
 
 </body>
 
